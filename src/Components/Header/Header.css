@@ -1,0 +1,72 @@
+.header-box,
+.header-box1 {
+  position: absolute;
+  top: 0;
+  max-height: 15vmin;
+  min-height: 15vmin;
+  background-color: var(--color2);
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  user-select: none;
+}
+
+.header-box1 {
+  justify-content: flex-end;
+  background-color: var(--color3);
+}
+
+.header-title {
+  box-sizing: content-box;
+  margin-left: 5vmin;
+  font-size: 6vmin;
+  color: white;
+}
+
+.dehaze-icon,
+.dehaze-icon1 {
+  min-width: 6vmin;
+  min-height: 6vmin;
+  margin-left: 3vmin;
+  cursor: pointer;
+  outline: none;
+  color: white;
+}
+
+.dehaze-icon1 {
+  padding-right: 2vmin;
+}
+
+.sidebar {
+  position: absolute;
+  left: 0;
+  min-height: 100%;
+  max-width: 0vmin;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-body {
+  background-color: var(--color3);
+  flex: 1;
+}
+
+@keyframes slide-in {
+  from {
+    min-width: 0vmin;
+  }
+  to {
+    min-width: 40vmin;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    min-width: 40vmin;
+  }
+  to {
+    min-width: 0vmin;
+  }
+}

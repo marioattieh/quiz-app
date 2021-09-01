@@ -1,38 +1,17 @@
-.App {
-  text-align: center;
+/*231942-5e548e-9f86c0-be95c4-e0b1cb*/
+:root {
+  --color1: #231942;
+  --color2: #5e548e;
+  --color3: #9f86c0;
+  --color4: #be95c4;
+  --color5: #e0b1cb;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "Ubuntu-Bold";
+  src: local("Ubuntu-Bold"), url(./Utils/Fonts/Ubuntu-Bold.ttf);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+* {
+  font-family: "Ubuntu-Bold";
 }
