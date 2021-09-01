@@ -1,0 +1,21 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1 {
+  user-select: none;
+}
+
+.btn {
+  box-sizing: border-box;
+  margin: 2vmin;
+  border-radius: 2.5vmin;
+  padding: 2vmin;
+  background-color: var(--color3);
+  user-select: none;
+  cursor: pointer;
+  color: white;
+}

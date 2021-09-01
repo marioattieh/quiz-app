@@ -20,7 +20,7 @@
 .header-title {
   box-sizing: content-box;
   margin-left: 5vmin;
-  font-size: 6vmin;
+  font-size: 5.83vmin;
   color: white;
 }
 
@@ -28,19 +28,38 @@
 .dehaze-icon1 {
   min-width: 6vmin;
   min-height: 6vmin;
-  margin-left: 3vmin;
+  margin-left: 1vmin;
   cursor: pointer;
   outline: none;
   color: white;
+  border-radius: 50%;
+  padding: 2vmin;
 }
 
 .dehaze-icon1 {
-  padding-right: 2vmin;
+  padding: 2vmin;
+}
+
+.dehaze-icon:hover,
+.dehaze-icon1:hover {
+  background-color: var(--color4);
+}
+
+.page-container {
+  margin-top: 17vmin;
+  margin-left: 2vmin;
+}
+
+.dash {
+  font-size: 4vmin;
+  margin: 5vmin;
+  color: white;
 }
 
 .sidebar {
   position: absolute;
   left: 0;
+  top: 0;
   min-height: 100%;
   max-width: 0vmin;
   overflow-x: hidden;
@@ -58,15 +77,33 @@
     min-width: 0vmin;
   }
   to {
-    min-width: 40vmin;
+    min-width: 41vmin;
   }
 }
 
 @keyframes slide-out {
   from {
-    min-width: 40vmin;
+    min-width: 41vmin;
   }
   to {
     min-width: 0vmin;
+  }
+}
+
+@keyframes page-slide-in {
+  from {
+    margin-left: 2vmin;
+  }
+  to {
+    margin-left: 43vmin;
+  }
+}
+
+@keyframes page-slide-out {
+  from {
+    margin-left: 43vmin;
+  }
+  to {
+    margin-left: 2vmin;
   }
 }
