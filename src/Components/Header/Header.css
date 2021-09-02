@@ -2,58 +2,54 @@
 .header-box1 {
   position: absolute;
   top: 0;
-  max-height: 15vmin;
-  min-height: 15vmin;
-  background-color: var(--color2);
+  max-height: 76px;
+  min-height: 76px;
+  background-color: var(--color6);
   min-width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   user-select: none;
+  justify-content: space-between;
+  z-index: 1;
 }
 
 .header-box1 {
-  justify-content: flex-end;
-  background-color: var(--color3);
+  background-color: var(--color2);
 }
 
 .header-title {
   box-sizing: content-box;
-  margin-left: 5vmin;
-  font-size: 5.83vmin;
+  font-size: 40px;
   color: white;
 }
 
 .dehaze-icon,
 .dehaze-icon1 {
-  min-width: 6vmin;
-  min-height: 6vmin;
-  margin-left: 1vmin;
+  min-width: 30px;
+  min-height: 30px;
+  margin-left: 15px;
   cursor: pointer;
   outline: none;
   color: white;
   border-radius: 50%;
-  padding: 2vmin;
+  padding: 5px;
 }
 
 .dehaze-icon1 {
-  padding: 2vmin;
+  margin-right: 10px;
 }
 
 .dehaze-icon:hover,
 .dehaze-icon1:hover {
-  background-color: var(--color4);
-}
-
-.page-container {
-  margin-top: 17vmin;
-  margin-left: 2vmin;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .dash {
-  font-size: 4vmin;
-  margin: 5vmin;
+  font-size: 20px;
   color: white;
+  margin-left: 55px;
+  margin-right: 27px;
 }
 
 .sidebar {
@@ -61,49 +57,44 @@
   left: 0;
   top: 0;
   min-height: 100%;
-  max-width: 0vmin;
+  max-width: 0px;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
+  z-index: 1;
 }
 
 .sidebar-body {
-  background-color: var(--color3);
+  background-color: var(--color2);
   flex: 1;
+}
+
+.component-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 76px;
 }
 
 @keyframes slide-in {
   from {
-    min-width: 0vmin;
+    min-width: 0px;
+    border-right: none;
   }
   to {
-    min-width: 41vmin;
+    border-right: 1px solid white;
+    min-width: 250px;
   }
 }
 
 @keyframes slide-out {
   from {
-    min-width: 41vmin;
+    border-right: 1px solid white;
+    min-width: 250px;
   }
   to {
-    min-width: 0vmin;
-  }
-}
-
-@keyframes page-slide-in {
-  from {
-    margin-left: 2vmin;
-  }
-  to {
-    margin-left: 43vmin;
-  }
-}
-
-@keyframes page-slide-out {
-  from {
-    margin-left: 43vmin;
-  }
-  to {
-    margin-left: 2vmin;
+    min-width: 0px;
+    border-right: none;
   }
 }

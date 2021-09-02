@@ -1,21 +1,40 @@
 .home-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-}
-
-h1 {
-  user-select: none;
-}
-
-.btn {
-  box-sizing: border-box;
-  margin: 2vmin;
-  border-radius: 2.5vmin;
-  padding: 2vmin;
   background-color: var(--color3);
+}
+
+.home-title {
+  user-select: none;
+  color: white;
+  margin-top: 100px;
+}
+
+.home-btn {
+  box-sizing: border-box;
+  margin: 15px;
+  border-radius: 23px;
+  padding: 18px;
+  background-color: var(--color2);
   user-select: none;
   cursor: pointer;
   color: white;
+  transition: all 500ms;
+}
+
+.home-btn:hover {
+  transform: scale(1.1);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
