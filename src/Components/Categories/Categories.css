@@ -10,7 +10,7 @@
   padding: 20px;
   min-height: 250px;
   max-height: 300px;
-  min-width: 300px;
+  min-width: 320px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -24,7 +24,7 @@
 }
 
 .horizontal-scroll:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
 }
 
 ::-webkit-scrollbar {
@@ -56,6 +56,7 @@ h2 {
   min-width: 50px;
   min-height: 50px;
   cursor: pointer;
+  border-radius: 50%;
 }
 
 .arrow-for {
@@ -66,118 +67,5 @@ h2 {
   min-width: 50px;
   min-height: 50px;
   cursor: pointer;
-}
-
-.profile-main-loader {
-  left: 50% !important;
-  margin-left: -100px;
-  position: fixed !important;
-  top: 50% !important;
-  margin-top: -100px;
-  width: 45px;
-  z-index: 9000 !important;
-}
-
-.profile-main-loader .loader {
-  position: relative;
-  margin: 0px auto;
-  width: 30px;
-  height: 30px;
-}
-.profile-main-loader .loader:before {
-  content: "";
-  display: block;
-  padding-top: 100%;
-}
-
-.circular-loader {
-  -webkit-animation: rotate 2s linear infinite;
-  animation: rotate 2s linear infinite;
-  height: 20%;
-  -webkit-transform-origin: center center;
-  -ms-transform-origin: center center;
-  transform-origin: center center;
-  width: 20%;
-  margin: auto;
-}
-
-.loader-path {
-  stroke-dasharray: 150, 200;
-  stroke-dashoffset: -10;
-  -webkit-animation: dash 1.5s ease-in-out infinite,
-    color 6s ease-in-out infinite;
-  animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
-  stroke-linecap: round;
-}
-
-@-webkit-keyframes rotate {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotate {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes dash {
-  0% {
-    stroke-dasharray: 1, 200;
-    stroke-dashoffset: 0;
-  }
-  50% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -35;
-  }
-  100% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -124;
-  }
-}
-@keyframes dash {
-  0% {
-    stroke-dasharray: 1, 200;
-    stroke-dashoffset: 0;
-  }
-  50% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -35;
-  }
-  100% {
-    stroke-dasharray: 89, 200;
-    stroke-dashoffset: -124;
-  }
-}
-@-webkit-keyframes color {
-  0% {
-    stroke: #ffffff;
-  }
-  40% {
-    stroke: #ffffff;
-  }
-  66% {
-    stroke: #ffffff;
-  }
-  80%,
-  90% {
-    stroke: #ffffff;
-  }
-}
-@keyframes color {
-  0% {
-    stroke: #ffffff;
-  }
-  40% {
-    stroke: #ffffff;
-  }
-  66% {
-    stroke: #ffffff;
-  }
-  80%,
-  90% {
-    stroke: #ffffff;
-  }
+  border-radius: 50%;
 }
