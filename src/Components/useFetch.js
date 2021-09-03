@@ -26,7 +26,7 @@ const useFetch = (url) => {
             console.log("Fetch aborted");
           } else {
             setIsPending(false);
-            setError(err);
+            setError(err.message);
           }
         });
     }, 1000);

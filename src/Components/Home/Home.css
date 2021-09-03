@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   background-color: var(--color3);
+  overflow: auto;
 }
 
 .home-title {
@@ -25,6 +26,12 @@
 
 .home-btn:hover {
   transform: scale(1.1);
+}
+
+p {
+  color: white;
+  font-size: larger;
+  user-select: none;
 }
 
 @keyframes gradient {

@@ -1,0 +1,20 @@
+.cat-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 80%;
+  overflow-x: auto;
+}
+
+.horizontal-scroll {
+  padding: 30px;
+  max-height: 300px;
+  min-width: 300px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}

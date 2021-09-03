@@ -75,6 +75,7 @@
   height: 100%;
   left: 0;
   top: 76px;
+  overflow: auto;
 }
 
 @keyframes slide-in {
