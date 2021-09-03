@@ -8,22 +8,40 @@ const Categories = () => {
   const { data, isPending, error } = useFetch(
     "http://localhost:8000/categories"
   );
+  const scrollLeft = () => {
+    document.getElementById("cont").scrollBy({
+      left: -400,
+      behavior: "smooth",
+    });
+  };
+  const scrollRight = () => {
+    document.getElementById("cont").scrollBy({
+      left: +400,
+      behavior: "smooth",
+    });
+  };
   return (
-    <div className="cat-container">
-      <ArrowBackIosIcon />
-      {isPending && <div>Loading...</div>}
+    <div id="cont" className="cat-container">
+      {isPending && <div></div>}
       {error && <div>{error}</div>}
       {data &&
         data.map(({ id, title, body, number }) => {
           return (
             <div className="horizontal-scroll" key={id}>
-              <div>{title}</div>
-              <div>{body}</div>
-              <div>{number}</div>
+              <h2 className="cat-title">{title}</h2>
+              <p className="cat-body">{body}</p>
+              <p className="cat-number">{"Number of quizzes: " + number}</p>
+              <ArrowForwardIosIcon
+                onClick={() => scrollRight()}
+                className="arrow-for"
+              />
+              <ArrowBackIosIcon
+                onClick={() => scrollLeft()}
+                className="arrow-back"
+              />
             </div>
           );
         })}
-      <ArrowForwardIosIcon />
     </div>
   );
 };

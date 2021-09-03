@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   background-color: var(--color3);
-  overflow: auto;
+  overflow: scroll;
 }
 
 .home-title {
