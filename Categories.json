@@ -54,5 +54,49 @@
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
       "number": 3
     }
+  ],
+  "sub-categories": [
+    {
+      "id": 1,
+      "title": "The silmarillion quiz",
+      "body": "A test of your knowledge of the silmarillion and its hidden information.",
+      "length": 10,
+      "parentID": 1
+    },
+    {
+      "id": 2,
+      "title": "Seven",
+      "body": "Tolkien used the number seven a lot in the telling of his stories.",
+      "length": 7,
+      "parentID": 1
+    },
+    {
+      "id": 3,
+      "title": "The valar",
+      "body": "The valar are the powers of Arda, how much do you know about them.",
+      "length": 12,
+      "parentID": 1
+    },
+    {
+      "id": 4,
+      "title": "Turin Turambar",
+      "body": "The son of Hurin and his many adventures through Beleriand.",
+      "length": 10,
+      "parentID": 1
+    },
+    {
+      "id": 5,
+      "title": "The Silmarils",
+      "body": "The greates gems ever created by the Noldor.",
+      "length": 8,
+      "parentID": 1
+    },
+    {
+      "id": 6,
+      "title": "The Silmarils",
+      "body": "The greates gems ever created by the Noldor.",
+      "length": 8,
+      "parentID": 2
+    }
   ]
 }

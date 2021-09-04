@@ -2,14 +2,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--color3);
   overflow: scroll;
   min-height: 850px;
+  background-image: url(../../Utils/Images/BG.png);
+  background-size: contain;
 }
 
 .home-title {
   user-select: none;
-  color: white;
+  color: black;
   margin-top: 100px;
 }
 
@@ -30,7 +31,7 @@
 }
 
 p {
-  color: white;
+  color: black;
   font-size: larger;
   user-select: none;
 }

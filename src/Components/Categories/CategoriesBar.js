@@ -4,6 +4,7 @@ import "./Categories.css";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import { Ring } from "react-spinners-css";
+import { Link } from "react-router-dom";
 
 const CategoriesBar = () => {
   const { data, isPending, error } = useFetch(
@@ -55,11 +56,15 @@ const CategoriesBar = () => {
       {data &&
         data.map(({ id, title, body, number }) => {
           return (
-            <div className="horizontal-scroll" key={id}>
+            <Link
+              to={"/Category/" + id + title}
+              className="horizontal-scroll"
+              key={id}
+            >
               <h2 className="cat-title">{title}</h2>
               <p className="cat-body">{body}</p>
               <p className="cat-number">{"Number of quizzes: " + number}</p>
-            </div>
+            </Link>
           );
         })}
       {data && (

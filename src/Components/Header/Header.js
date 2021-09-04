@@ -3,6 +3,7 @@ import "./Header.css";
 import DehazeIcon from "@material-ui/icons/Dehaze";
 import Home from "../Home/Home";
 import About from "../About/About";
+import Category from "../Categories/Category";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 const Header = () => {
@@ -37,6 +38,7 @@ const Header = () => {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/About" component={About} />
+          <Route path="/Category/:catId:name" component={Category} />
         </Switch>
       </div>
     </Router>

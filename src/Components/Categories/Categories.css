@@ -20,7 +20,8 @@
   cursor: pointer;
   transition: transform 200ms ease-in;
   align-items: center;
-  background-color: var(--color7);
+  background-color: var(--color1);
+  text-decoration: none;
 }
 
 .horizontal-scroll:hover {
@@ -42,6 +43,7 @@ h2 {
 
 .cat-body {
   font-size: medium;
+  color: white;
 }
 
 .cat-number {
@@ -68,4 +70,49 @@ h2 {
   min-height: 50px;
   cursor: pointer;
   border-radius: 50%;
+}
+
+.one-cat-container {
+  padding-left: 270px;
+  padding-bottom: 200px;
+  background-image: url(../../Utils/Images/BG.png);
+  background-size: contain;
+}
+
+.one-cat-title {
+  display: flex;
+  font-size: xx-large;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+  max-width: 80%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+}
+
+.quiz-list {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  outline: none;
+  border-radius: 10px;
+  justify-content: center;
+  margin-bottom: 35px;
+  padding: 15px;
+  max-width: 80%;
+  background-color: var(--color1);
+  transition: transform 300ms ease-in;
+}
+
+.quiz-list:hover {
+  transform: scale(1.03);
+}
+
+.quiz-title {
+  color: white;
+}
+
+.quiz-body {
+  color: white;
 }
