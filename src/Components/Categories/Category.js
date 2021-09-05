@@ -18,11 +18,7 @@ const Category = () => {
         data.map(({ id, title, body, parentID }) => {
           return (
             parentID + "" === catId && (
-              <Link
-                className="quiz-list"
-                to={"/Category/" + id + title}
-                key={id}
-              >
+              <Link className="quiz-list" to={"/Quiz/" + id + title} key={id}>
                 <div className="quiz-title">{title}</div>
                 <div className="quiz-body">{body}</div>
               </Link>

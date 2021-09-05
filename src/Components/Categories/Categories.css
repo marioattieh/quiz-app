@@ -54,7 +54,7 @@ h2 {
   position: absolute;
   top: 500px;
   left: 2%;
-  color: white;
+  color: black;
   min-width: 50px;
   min-height: 50px;
   cursor: pointer;
@@ -65,7 +65,7 @@ h2 {
   position: absolute;
   top: 500px;
   right: 2%;
-  color: white;
+  color: black;
   min-width: 50px;
   min-height: 50px;
   cursor: pointer;
@@ -74,9 +74,11 @@ h2 {
 
 .one-cat-container {
   padding-left: 270px;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   background-image: url(../../Utils/Images/BG.png);
-  background-size: contain;
+  background-size: cover;
+  background-size: 70%;
+  min-height: 100vmin;
 }
 
 .one-cat-title {
@@ -115,4 +117,10 @@ h2 {
 
 .quiz-body {
   color: white;
+}
+
+.ring {
+  position: absolute;
+  top: 200px;
+  left: 30%;
 }
