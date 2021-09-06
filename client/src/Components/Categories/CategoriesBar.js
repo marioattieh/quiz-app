@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const CategoriesBar = () => {
   const { data, isPending, error } = useFetch(
-    "http://localhost:8000/categories"
+    "http://localhost:5000/Categories"
   );
   const [queue, setQueue] = useState([]);
   const [end, setEnd] = useState(true);
@@ -54,12 +54,12 @@ const CategoriesBar = () => {
       {isPending && <Ring size={300} />}
       {error && <div>{error}</div>}
       {data &&
-        data.map(({ id, title, body, number }) => {
+        data.map(({ _id, title, body, number }) => {
           return (
             <Link
-              to={"/Category/" + id + title}
+              to={"/Category/" + _id + title}
               className="horizontal-scroll"
-              key={id}
+              key={_id}
             >
               <h2 className="cat-title">{title}</h2>
               <p className="cat-body">{body}</p>

@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const CatSchema = mongoose.Schema({
+const QuizSchema = mongoose.Schema({
   _id: {
     type: Number,
     required: true,
@@ -17,10 +17,14 @@ const CatSchema = mongoose.Schema({
     type: Date,
     default: Date.now,
   },
-  number: {
+  length: {
     type: Number,
-    default: 0,
+    required: true,
+  },
+  parentId: {
+    type: Number,
+    required: true,
   },
 });
 
-module.exports = mongoose.model("cats", CatSchema);
+module.exports = mongoose.model("quiz", QuizSchema);

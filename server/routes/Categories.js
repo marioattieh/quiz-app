@@ -13,8 +13,10 @@ router.get("/", async (req, res) => {
 
 router.post("/", async (req, res) => {
   const cat = new Cat({
+    _id: req.body._id,
     title: req.body.title,
     body: req.body.body,
+    number: req.body.number,
   });
   try {
     const savedCat = await cat.save();
